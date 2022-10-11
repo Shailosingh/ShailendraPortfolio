@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Shailendra's Projects";
+}
+
+<div class="text-center">
+    <h1><u>Major Projects</u></h1>
+    <p>Listed below are my most sophisticated and significant projects. To see more about a project below click its image to see either its source 
+    code or website. To see all of the code I wish to share, see my <a href="https://github.com/Shailosingh">GitHub</a></p>
+</div>
+<hr />
+<h2>Photokeep</h2>
+<a href="https://photokeepwebsite.azurewebsites.net/"><span title="Photokeep"><img class="img-fluid" src='~/Images/Photokeep.png' /></span></a>
+<p>
+    Photokeep is a Discord bot that allows users to create folders within the bot and store their photos and files there in an organized way.
+    This allows anyone who uses Discord to be able to access all their photos and files with just a simple command, in any server they are on
+    without having to worry if they are on their phone, PC or any other device. Photokeep also comes with a 
+    <a href="https://photokeepwebsite.azurewebsites.net/">companion website</a> that users can log in to and access all their folders and files 
+    straight from the browser.
+</p>
+<p>
+    The bot was built with the C# Discord API DSharpPlus, supported by the database service Azure Cosmos DB and app hosting service Azure
+    App Services. The website was built with ASP.NET (MVC) and allows logins using the Discord Authentication API (OAuth2). 
+</p>
+<p>
+    Building this bot taught me the best practices of handling many users' data securely and serving all of them efficiently at once.
+</p>
+<hr />
+<h2>Discord FileMaster</h2>
+<a href="https://github.com/Shailosingh/DiscordFileMaster"><span title="Discord FileMaster"><img class="img-fluid" src='~/Images/FileMaster.png' /></span></a>
+<p>
+    Discord FileMaster is a Windows application that allows users to split large files (File Splitter) into 8 MB chunks and then be able to rejoin
+    those files (File Joiner) into the original file again. FileMaster was made for any Discord user who wants to send large files to a friend on
+    Discord but is stopped by Discord's tiny 8 MB attachment limit.
+</p>
+<p>
+    This application was built with C# and WinForms.
+</p>
+<p>
+    Building this application taught me a lot about making very fast and safe applications that deal with File I/O.
+</p>
+<hr />
+<h2>Minesweeper Library</h2>
+<a href="https://github.com/Shailosingh/MinesweeperLibrary"><span title="Minesweeper Library"><img class="img-fluid" src='~/Images/minesweeper.png' /></span></a>
+<p>
+    The Minesweeper Library is a <a href="https://www.nuget.org/packages/MinesweeperLibrary/">NuGet</a> package that acts as the backend for any 
+    implementation of Minesweeper a programmer would wish to make. Any front-end developer can create a nice Minesweeper UI and simply hook this 
+    package into the UI without thinking about the fine mechanics of Minesweeper to make a really good, responsive, fast and functional Minesweeper 
+    implementation. Since .NET is cross-platform, this allows a Minesweeper implementation to be made very quickly on not only Windows but also, 
+    macOS, Linux, Android, iOS, etc.
+</p>
+<p>
+    This package was built with C# and published to NuGet.
+</p>
+<p>
+    Building this package taught me how to write code not simply intended for a normal end-user but, also for fellow programmers like myself who will
+    rely on the public methods of my library returning very specific and very predictable values for their use in their apps. This meant I had to do
+    extensive testing to ensure absolutely everything worked as expected. It also forced me to use advanced debugging tools to solve the bugs I ran into.
+    Finally and most importantly, it taught me how to write really good and detailed documentation so that other programmers never have to read any of my
+    source code to use the methods and objects in my package.
+</p>
