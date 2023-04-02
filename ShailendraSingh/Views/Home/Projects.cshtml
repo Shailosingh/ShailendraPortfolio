@@ -2,59 +2,130 @@
     ViewData["Title"] = "Shailendra's Projects";
 }
 
-<div class="text-center">
-    <h1><u>Major Projects</u></h1>
-    <p>Listed below are my most sophisticated and significant projects. To see more about a project below click its image to see either its source 
-    code or website. To see all of the code I wish to share, see my <a href="https://github.com/Shailosingh">GitHub</a></p>
+<div class="card-columns">
+    <div class="card" onclick="window.open('https://github.com/Shailosingh/Photokeep', '_blank');" style="cursor: pointer;">
+        <img class="card-img" src="~/Images/Photokeep.png">
+        <div class="card-body">
+            <h4 class="card-title">Photokeep</h4>
+            <p class="card-text">
+                Photokeep is an image hosting Discord bot that that allows users to upload photos/files and organize them with folders.
+                This way, users can easily share photos with their friends and family, without clogging up space on their hard drive.
+                All they have to do is type a simple command to the bot, and Photokeep does the rest. Not only this but, there is 
+                also a companion website that allows the user to view their photos and folders on the browser.
+            </p>
+
+            <p class="card-text">
+                This bot was developed with C#, DSharpPlus for the Discord API, Azure Cosmos DB for the database and Azure App Services 
+                for the hosting.
+            </p>
+
+            <p class="card-text">
+                The website was programmed with ASP.NET (MVC) and the Discord Authentication API (OAuth2)
+            </p>
+
+            <p class="card-text">
+                Photokeep taught me how to manage a large web project with a database that serves over 120 users with hundreds of 
+                images, in an efficient manner.
+            </p>
+
+            <button type="button" class="btn btn-primary" onclick="window.open('https://photokeepwebsite.azurewebsites.net/', '_blank'); event.stopPropagation()">
+                Visit Photokeep!
+            </button>
+        </div>
+    </div>
+
+    <div class="card" onclick="window.open('https://github.com/Shailosingh/Folderity', '_blank');" style="cursor: pointer;">
+        <img class="card-img" src="~/Images/Folderity.png">
+        <div class="card-body">
+            <h4 class="card-title">Folderity</h4>
+            <p class="card-text">
+                Folderity is a fast and lightweight music player for Windows that allows users to create custom playlists in 
+                folders on their computer that automatically update when a song is added or removed from the folder. This is 
+                very convenient for anyone who has a large collection of music files (MP3's, WAV's, etc.), since it allows the
+                user to automatically organize their music into playlists without having to manually add songs to the playlist
+                one at a time.
+            </p>
+
+            <p class="card-text">
+                This app was programmed with C++/WinRT and WinUI 3. The music player component was programmed using Microsoft Media
+                Foundation (MMF). MMF is the modern Windows multimedia framework and using it required a deep understanding of COM 
+                objects and the Windows Audio Stack. To simplify its use, I created a helper library called MMFSoundPlayer to make
+                it easier for programmers to play audio files in their apps.
+            </p>
+
+            <p class="card-text">
+                Folderity is currently in the late stages of development and will soon be available on the Microsoft Store.
+            </p>
+        </div>
+    </div>
+    
+    <div class="card" onclick="window.open('https://github.com/Shailosingh/HuffmanCompressionSuite', '_blank');" style="cursor: pointer;">
+        <img class="card-img" src="~/Images/HuffmanTree.png">
+        <div class="card-body">
+            <h4 class="card-title">Huffman Compression Suite</h4>
+            <p class="card-text">
+                Huffman Compression Suite is an app that allows users to losslessly compress and decompress their files using the 
+                huffman coding algorithm
+            </p>
+
+            <p class="card-text">
+                This app was programmed in C++/WinRT and WinUI 3. Making this app taught me how to use complex data structures and
+                manage its memory correctly, in a real app outside of school.
+            </p>
+        </div>
+    </div>
+
+    <div class="card" onclick="window.open('https://github.com/Shailosingh/MinesweeperClassic', '_blank');" style="cursor: pointer;">
+        <img class="card-img" src="~/Images/Minesweeper.png">
+        <div class="card-body">
+            <h4 class="card-title">Minesweeper Classic</h4>
+            <p class="card-text">
+                Minesweeper Classic is a remake of the classic Windows XP version of Minesweeper that we all know and love.
+                It is available right now on the Microsoft Store and currently has over 5871 downloads.
+            </p>
+
+            <p class="card-text">
+                This game was programmed with C# and WinUI 3. For programmers, the game's logic is available as a seperate NuGet 
+                package called Minesweeper Library that anyone can download, hook into a UI and instantly have their own port of 
+                Minesweeper working on any platform that supports .NET, such as Windows, Mac, Linux, Android, etc.
+            </p>
+
+            <p class="card-text">
+                Minesweeper Classic taught me how to write clean and modular code that seperates all of the game's logic from its
+                UI code. This was mandatory since, I created Minesweeper Library as a seperate NuGet package for the logic of the 
+                game. This also taught me how to write a library with interfaces that other programmers can easily understand and 
+                use in their own projects.
+            </p>
+
+            <button type="button" class="btn btn-primary" onclick="window.open('https://www.microsoft.com/store/productId/9NW74QKKG0DG', '_blank'); event.stopPropagation()">
+                Download Minesweeper Classic!
+            </button>
+
+            <button type="button" class="btn btn-primary" onclick="window.open('https://www.nuget.org/packages/MinesweeperLibrary', '_blank'); event.stopPropagation()">
+                Download Minesweeper Library!
+            </button>
+        </div>
+    </div>
+    
+    <div class="card" onclick="window.open('https://github.com/Shailosingh/DiscordFileMasterV2', '_blank');" style="cursor: pointer;">
+        <img class="card-img" src="~/Images/Discord FileMaster.png">
+        <div class="card-body">
+            <h4 class="card-title">Discord FileMaster</h4>
+            <p class="card-text">
+                Discord FileMaster is an app that allows the user to split large files into 8 MB chunks for upload 
+                to Discord. It can also merge the 8 MB chunks back together. This is very useful for users who wish
+                to upload large files to Discord, but are unable to do so because Discord has a 8 MB file size limit.
+            </p>
+
+            <p class="card-text">
+                The file splitting and joining component of the app was developed as a seperate NuGet package called, 
+                FileMaster Library. This library allows programmers to easily split files into any size chunks they want
+                and join them back together. The library made the code behind the app very clean and modular.
+            </p>
+
+            <button type="button" class="btn btn-primary" onclick="window.open('https://www.nuget.org/packages/FileMasterLibrary', '_blank'); event.stopPropagation()">
+                Download FileMaster Library!
+            </button>
+        </div>
+    </div>
 </div>
-<hr />
-<h2>Photokeep</h2>
-<a href="https://photokeepwebsite.azurewebsites.net/"><span title="Photokeep"><img class="img-fluid" src='~/Images/Photokeep.png' /></span></a>
-<p>
-    Photokeep is a Discord bot that allows users to create folders within the bot and store their photos and files there in an organized way.
-    This allows anyone who uses Discord to be able to access all their photos and files with just a simple command, in any server they are on
-    without having to worry if they are on their phone, PC or any other device. Photokeep also comes with a 
-    <a href="https://photokeepwebsite.azurewebsites.net/">companion website</a> that users can log in to and access all their folders and files 
-    straight from the browser.
-</p>
-<p>
-    The bot was built with the C# Discord API DSharpPlus, supported by the database service Azure Cosmos DB and app hosting service Azure
-    App Services. The website was built with ASP.NET (MVC) and allows logins using the Discord Authentication API (OAuth2). 
-</p>
-<p>
-    Building this bot taught me the best practices of handling many users' data securely and serving all of them efficiently at once.
-</p>
-<hr />
-<h2>Discord FileMaster</h2>
-<a href="https://github.com/Shailosingh/DiscordFileMaster"><span title="Discord FileMaster"><img class="img-fluid" src='~/Images/FileMaster.png' /></span></a>
-<p>
-    Discord FileMaster is a Windows application that allows users to split large files (File Splitter) into 8 MB chunks and then be able to rejoin
-    those files (File Joiner) into the original file again. FileMaster was made for any Discord user who wants to send large files to a friend on
-    Discord but is stopped by Discord's tiny 8 MB attachment limit.
-</p>
-<p>
-    This application was built with C# and WinForms.
-</p>
-<p>
-    Building this application taught me a lot about making very fast and safe applications that deal with File I/O.
-</p>
-<hr />
-<h2>Minesweeper Library</h2>
-<a href="https://github.com/Shailosingh/MinesweeperLibrary"><span title="Minesweeper Library"><img class="img-fluid" src='~/Images/minesweeper.png' /></span></a>
-<p>
-    The Minesweeper Library is a <a href="https://www.nuget.org/packages/MinesweeperLibrary/">NuGet</a> package that acts as the backend for any 
-    implementation of Minesweeper a programmer would wish to make. Any front-end developer can create a nice Minesweeper UI and simply hook this 
-    package into the UI without thinking about the fine mechanics of Minesweeper to make a really good, responsive, fast and functional Minesweeper 
-    implementation. Since .NET is cross-platform, this allows a Minesweeper implementation to be made very quickly on not only Windows but also, 
-    macOS, Linux, Android, iOS, etc.
-</p>
-<p>
-    This package was built with C# and published to NuGet.
-</p>
-<p>
-    Building this package taught me how to write code not simply intended for a normal end-user but, also for fellow programmers like myself who will
-    rely on the public methods of my library returning very specific and very predictable values for their use in their apps. This meant I had to do
-    extensive testing to ensure absolutely everything worked as expected. It also forced me to use advanced debugging tools to solve the bugs I ran into.
-    Finally and most importantly, it taught me how to write really good and detailed documentation so that other programmers never have to read any of my
-    source code to use the methods and objects in my package.
-</p>
